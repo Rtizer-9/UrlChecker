@@ -157,11 +157,6 @@ class StatusDialog extends AModuleDialog implements View.OnClickListener, Clicka
             info.setText(finalMessage);
             ClickableLinks.linkify(info, StatusDialog.this);
             check.setEnabled(true);
-
-            if (redirectionUrl != null) {
-                setUrl(redirectionUrl);
-            }
-
         });
     }
 
